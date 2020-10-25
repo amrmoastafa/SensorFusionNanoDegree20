@@ -26,7 +26,7 @@ void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer,ProcessPointClouds
     // renderPointCloud(viewer, inputCloud, "inputCloud", Color(1, 1, 1));
 
     // Cluster obstacles
-    std::vector<pcl::PointCloud<pcl::PointXYZI>::Ptr> cloudClusters = pointProcessorI->Clustering(segmentCloud.first, 0.25, 30, 5000);
+    std::vector<pcl::PointCloud<pcl::PointXYZI>::Ptr> cloudClusters = pointProcessorI->Clustering(segmentCloud.first, 0.4, 30, 3000);
 
     int clusterId = 0;
     std::vector<Color> colors = {Color(1,0,0), Color(1,1,0), Color(0,0,1), Color(1,0,1), Color(0,1,1), Color(1,1,1)};
