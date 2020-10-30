@@ -40,7 +40,7 @@ void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer,ProcessPointClouds
     // renderPointCloud(viewer,inputCloud,"inputCloud");
 
    // Filter point cloud with PCL built-in functions
-    auto filterCloud = pointProcessorI->FilterCloud(inputCloud, 0.3, Eigen::Vector4f(-20, -10.0, -3, 1), Eigen::Vector4f(25, 10.0, 8, 1));
+    auto filterCloud = pointProcessorI->FilterCloud(inputCloud, 0.3, Eigen::Vector4f(-20, -6.0, -3, 1), Eigen::Vector4f(25, 6.0, 8, 1));
     // renderPointCloud(viewer, filterCloud, "filterCloud");
 
     // Segment the road plane
